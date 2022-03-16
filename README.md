@@ -1,2 +1,2 @@
 # uf1305
-https://webusable.github.io/uf1305/
+https://jesussilvosa.github.io/uf1305/
