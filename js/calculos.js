@@ -105,3 +105,6 @@ function monstrarTexto (id, texto){
         );
         elemento.innerHTML = texto;
 }
+
+function mostrarinfo (Iid, tag, info, texto)
+var elemnto = document.getElementById(id)
