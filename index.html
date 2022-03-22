@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/calculos.css" />
+    <script src="./js/calculos.js"></script>
+
     <title>Factorial de n</title>
     <script>
         // Definir variables
@@ -24,13 +26,12 @@
 
         function factorial() {
             var factorial = 1;
-            for ( i=1; i <= n; i++ ) {
+            for (i = 1; i <= n; i++) {
                 factorial = factorial * i;
             }
 
             return factorial;
         }
-
     </script>
 </head>
 
@@ -51,20 +52,20 @@
 
             <table class="resultados">
                 <caption>Tabla de resultados</caption>
-                    <thead>
-                        <tr>
-                            <th>Primer número</th>
-                            <th>Segundo número</th>
-                            <th>Resultado</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td id="td11"></td>
-                            <td id="td12"></td>
-                            <td id="td13"></td>
-                        </tr>
-                    </tbody>
+                <thead>
+                    <tr>
+                        <th>Primer número</th>
+                        <th>Segundo número</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="td11"></td>
+                        <td id="td12"></td>
+                        <td id="td13"></td>
+                    </tr>
+                </tbody>
             </table>
         </article>
 
@@ -76,19 +77,39 @@
             </p>
             <table class="resultados">
                 <caption>Tabla de resultados</caption>
-                    <thead>
-                        <tr>
-                            <th>Número</th>
-                            <th>Factorial</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td id="td21"></td>
-                            <td id="td22"></td>
-                        </tr>
-                    </tbody>
+                <thead>
+                    <tr>
+                        <th>Número</th>
+                        <th>Factorial</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="td21"></td>
+                        <td id="td22"></td>
+                    </tr>
+                </tbody>
             </table>
+        </article>
+        <article>
+            <script>
+                var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre",
+                    "Octubre",
+                    "Noviembre", "Diciembre"
+                ];
+
+                
+            </script>
+
+
+<script>
+
+var aleatorio=Math.round (Math.random ()*100);
+   
+
+ alert (aleatorio)
+
+</script>
         </article>
     </main>
     <footer></footer>
