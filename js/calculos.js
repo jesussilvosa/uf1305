@@ -89,3 +89,19 @@ function multiplicar( f1, f2 ){
     var producto = f1 * f2;
     return producto;
 }
+
+
+function leertexto ( ) {
+    texto=prompt ("porfi, escribe el nombre de tu personaje");
+    return texto;
+
+}
+
+// funcion para insertar texto en ek html
+
+function monstrarTexto (id, texto){
+    elemento = document.getElementById(
+        id
+        );
+        elemento.innerHTML = texto;
+}
