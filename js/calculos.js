@@ -48,7 +48,11 @@ function mostrarFactorial( n ) {
     document.getElementById('td22').innerHTML = factorial( n );
 }
 
-fuction mostrarTodo (id, personaje, aldea, clan) {}
+fuction mostrarTodo (id, personaje, aldea, clan) {
+
+    
+}
+
 
 
 
