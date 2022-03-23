@@ -9,6 +9,36 @@ function leerNumero() {
     return num;
 }
 
+// Función para leer texto
+function leerTexto() {
+    texto = prompt("Porfi, escribe el nombre de tu personaje");
+    return texto;
+}
+
+// Función para insertar texto en el HTML
+
+function mostrarTexto( id, texto ){
+    var elemento = document.getElementById(id);
+
+    // Insertamos el texto pasado por parámetro
+    // al elemento con id pasado por parámetro
+    elemento.innerHTML = texto;
+}
+
+function mostrarInfo(id, tag, info, texto){
+    var etiqueta = "<" + tag + ">";
+    etiqueta += info;
+    etiqueta += "</" + tag + "> ";
+    etiqueta += texto;
+
+    // var etiqueta = "<" + tag + ">"
+    //     + info
+    //     + "</" + tag + "> "
+    //     + texto;
+
+    mostrarTexto( id, etiqueta );
+}
+
 function mostrarMultiplo(n, m) {
     document.getElementById('td11').innerHTML = n;
     document.getElementById('td12').innerHTML = m;
@@ -26,7 +56,8 @@ function mostrarResultados( op, n, m = 0 ) {
 
     switch (op) {
         case 'multiplo':
-            document.getElementById('td11').innerHTML = n;
+            var td11 =document.getElementById('td11');
+            td11.innerHTML = n;
             document.getElementById('td12').innerHTML = m;
             document.getElementById('td13').innerHTML = multiplosDeHasta(n, m);
         break;
@@ -89,32 +120,3 @@ function multiplicar( f1, f2 ){
     var producto = f1 * f2;
     return producto;
 }
-
-
-function leertexto ( ) {
-    texto=prompt ("porfi, escribe el nombre de tu personaje");
-    return texto;
-
-}
-
-// funcion para insertar texto en ek html
-
-function monstrarTexto (id, texto){
-    elemento = document.getElementById(
-        id
-        );
-        elemento.innerHTML = texto;
-}
-
-function mostrarinfo (Iid, tag, info, texto)
-var elemnto = document.getElementById(id)
-{
-    var etiqueta = "<" + tag + ">";
-    etiqueta += info;
-    etiqueta = "<" + tag + ">";
-    etiqueta += texto; 
-    //elemento.innerHTML = etiqueta;
-    monstrarTexto();
-    
-}
-
