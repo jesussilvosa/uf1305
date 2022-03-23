@@ -108,3 +108,13 @@ function monstrarTexto (id, texto){
 
 function mostrarinfo (Iid, tag, info, texto)
 var elemnto = document.getElementById(id)
+{
+    var etiqueta = "<" + tag + ">";
+    etiqueta += info;
+    etiqueta = "<" + tag + ">";
+    etiqueta += texto; 
+    //elemento.innerHTML = etiqueta;
+    monstrarTexto();
+    
+}
+
