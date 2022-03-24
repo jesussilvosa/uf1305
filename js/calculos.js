@@ -36,6 +36,37 @@ function mostrarInfo(id, tag, info, texto){
     mostrarTexto( id, contenido );
 }
 
+// function dameInfo(tag, info, texto){
+//     var contenido = "<" + tag + ">";
+//     contenido += info;
+//     contenido += "</" + tag + "> ";
+//     contenido += texto;
+//
+//     return contenido;
+// }
+
+
+function mostrarTodo(id, personaje, aldea, clan, poder, vidas) {
+
+    var personaje = "<strong>Personaje: </strong>" + personaje;
+    var aldea = "<strong>Aldea: </strong>" + aldea;
+    var clan = "<strong>Clan: </strong>" + clan;
+    var poder = "<strong>Superpoder: </strong>" + poder;
+    var vidas = "<strong>Vidas: </strong>" + vidas;
+
+    var lis = "<li>" + personaje + "</li>";
+    lis += "<li>" + aldea + "</li>";
+    lis += "<li>" + clan + "</li>";
+    lis += "<li>" + poder + "</li>";
+    lis += "<li>" + vidas + "</li>";
+
+    var elemento = document.getElementById(id);
+
+    // Insertamos el texto pasado por parámetro
+    // al elemento con id pasado por parámetro
+    elemento.innerHTML = lis;
+}
+
 function mostrarMultiplo(n, m) {
     document.getElementById('td11').innerHTML = n;
     document.getElementById('td12').innerHTML = m;
@@ -47,13 +78,6 @@ function mostrarFactorial( n ) {
     document.getElementById('td21').innerHTML = n;
     document.getElementById('td22').innerHTML = factorial( n );
 }
-
-fuction mostrarTodo (id, personaje, aldea, clan) {
-
-    
-}
-
-
 
 
 function mostrarResultados( op, n, m = 0 ) {

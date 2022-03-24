@@ -50,29 +50,23 @@
                     Clan
                 </button>
                 <button onclick="mostrarInfo('clan1', 'strong', 'Clan: ', clan)">Mostrar Clan</button>
-                <!-- <button onclick="mostrarTexto(
-                    'clan1',
-                    '<strong>Abril y Diana</strong> son las más guapas del Reino'
-                )">Mostrar Clan</button> -->
+            </p>
+            <p>
+                <button onclick="sp = leerTexto()">Superpoder</button>
+                <button onclick="mostrarInfo('sp1', 'strong', 'Superpoder: ', sp)">Mostrar Superpoder</button>
+            </p>
+            <p>
+                <button onclick="v = leerTexto()">Vidas</button>
             </p>
 
             <p>
-                <button onclick="mostrarTodo('datos', pj, ald, clan)"> Mostrar todo </button>
+                <button onclick="mostrarTodo('datos', pj, ald, clan, sp, v)">Mostrar todo</button>
             </p>
-
-            <p>
- 
-                <button onclick="Superpoder = leerTexto ( )">superpoder</button>
-
-
-
-
-            </p>
-
 
             <p id="pj1"></p>
             <p id="ald1"></p>
             <p id="clan1"></p>
+            <p id="sp1"></p>
 
             <ul id="datos"></ul>
         </article>
@@ -99,13 +93,13 @@
             <p>
                 <script>
                     document.write(
-                        "La suma de " +
-                        x +
-                        " y " +
-                        y +
-                        " es igual a " +
-                        suma +
-                        "."
+                        "La suma de "
+                        + x
+                        + " y "
+                        + y
+                        + " es igual a "
+                        + suma
+                        + "."
                     );
                     // document.write("<br/>");
                     // document.write("La suma de x y y es igual a suma");
@@ -129,8 +123,17 @@
             </p>
         </article>
 
+
+
+
+
+
+
+
+
+
+
+
     </main>
     <footer></footer>
 </body>
-
-</html>
