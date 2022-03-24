@@ -179,3 +179,5 @@ function mostrarLista(id, personaje, aldea, clan, poder, vidas) {
     //lis += "<li>" + vidas + "</li>";
 
     //var elemento = document.getElementById(id);
+
+}

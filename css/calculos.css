@@ -1,32 +1,32 @@
 table.resultados {
-    border-collapse: collapse;
+  border-collapse: collapse;
 }
 
 table.resultados caption {
-    font-weight: bold;
-    margin-bottom: 1em;
+  font-weight: bold;
+  margin-bottom: 1em;
 }
 
 table.resultados th,
 table.resultados td {
-    padding: 0.5em 1em;
-    border: 1px solid grey;
+  padding: 0.5em 1em;
+  border: 1px solid grey;
 }
 
 article.botones input {
-    padding: 0.5em 1em;
+  padding: 0.5em 1em;
 }
 
 ul.sumando {
-    margin: 0;
-    list-style: none;
-    text-align: center;
+  margin: 0;
+  list-style: none;
+  text-align: center;
 }
 
 ul.sumando li {
-    display: inline-block;
+  display: inline-block;
 }
 
 ul.sumando input {
-    padding: 0.5em;
+  padding: 0.5em;
 }
