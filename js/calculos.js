@@ -164,12 +164,14 @@ function mostrarLista(id, personaje, aldea, clan, poder, vidas) {
     var vidas = "<strong>Vidas: </strong>" + vidas;
 
 
-    var li = document.createElement("li");
-    li.innerHTML = (personaje);
+    var lista = document.getElementById(id);
 
-    var ul = document.getElementById(id);
 
-    ul.appendChild(li);
+    var item = document.createElement("li");
+    item.innerHTML = personaje;
+
+
+    ul.appendChild(item);
 
 
     //var lis = "<li>" + personaje + "</li>";
