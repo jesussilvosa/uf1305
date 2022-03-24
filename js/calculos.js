@@ -17,7 +17,7 @@ function leerTexto() {
 
 // Función para insertar texto en el HTML
 
-function mostrarTexto( id, texto ){
+function mostrarTexto(id, texto) {
     var elemento = document.getElementById(id);
 
     // Insertamos el texto pasado por parámetro
@@ -26,14 +26,14 @@ function mostrarTexto( id, texto ){
 }
 
 
-function mostrarInfo(id, tag, info, texto){
+function mostrarInfo(id, tag, info, texto) {
     var contenido = "<" + tag + ">";
     contenido += info;
     contenido += "</" + tag + "> ";
     contenido += texto;
 
 
-    mostrarTexto( id, contenido );
+    mostrarTexto(id, contenido);
 }
 
 // function dameInfo(tag, info, texto){
@@ -74,26 +74,26 @@ function mostrarMultiplo(n, m) {
 }
 
 
-function mostrarFactorial( n ) {
+function mostrarFactorial(n) {
     document.getElementById('td21').innerHTML = n;
-    document.getElementById('td22').innerHTML = factorial( n );
+    document.getElementById('td22').innerHTML = factorial(n);
 }
 
 
-function mostrarResultados( op, n, m = 0 ) {
+function mostrarResultados(op, n, m = 0) {
 
     switch (op) {
         case 'multiplo':
-            var td11 =document.getElementById('td11');
+            var td11 = document.getElementById('td11');
             td11.innerHTML = n;
             document.getElementById('td12').innerHTML = m;
             document.getElementById('td13').innerHTML = multiplosDeHasta(n, m);
-        break;
+            break;
 
-        case 'factorial' :
+        case 'factorial':
             document.getElementById('td21').innerHTML = n;
-            document.getElementById('td22').innerHTML = factorial( n );
-        break;
+            document.getElementById('td22').innerHTML = factorial(n);
+            break;
         default:
     }
 }
@@ -117,7 +117,7 @@ function multiplosDeHasta(n, m) {
     i = 1;
 
     // Condición
-    while ( multiplo < m ) {
+    while (multiplo < m) {
         multiplo = n * i;
         mensaje = mensaje + multiplo + " ";
 
@@ -130,21 +130,52 @@ function multiplosDeHasta(n, m) {
     return mensaje;
 }
 
-function factorial( n ) {
+function factorial(n) {
     var factorial = 1;
-    for ( i=1; i <= n; i++ ) {
+    for (i = 1; i <= n; i++) {
         factorial = factorial * i;
     }
     return factorial;
 }
 
-function sumar( s1, s2 ) {
+function sumar(s1, s2) {
     var suma = s1 + s2;
     return suma;
 }
 
 
-function multiplicar( f1, f2 ){
+function multiplicar(f1, f2) {
     var producto = f1 * f2;
     return producto;
 }
+
+
+//var li=document.createElement('li');
+
+//li=li.innerHTML (personaje) 
+
+
+function mostrarLista(id, personaje, aldea, clan, poder, vidas) {
+
+    var personaje = "<strong>Personaje: </strong>" + personaje;
+    var aldea = "<strong>Aldea: </strong>" + aldea;
+    var clan = "<strong>Clan: </strong>" + clan;
+    var poder = "<strong>Superpoder: </strong>" + poder;
+    var vidas = "<strong>Vidas: </strong>" + vidas;
+
+
+    var li = document.createElement("li");
+    li.innerHTML = (personaje);
+
+    var ul = document.getElementById(id);
+
+    ul.appendChild(li);
+
+
+    //var lis = "<li>" + personaje + "</li>";
+    // lis += "<li>" + aldea + "</li>";
+    //lis += "<li>" + clan + "</li>";
+    //lis += "<li>" + poder + "</li>";
+    //lis += "<li>" + vidas + "</li>";
+
+    //var elemento = document.getElementById(id);
