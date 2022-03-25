@@ -31,7 +31,7 @@
     </header>
     <nav></nav>
     <main>
-        <article>
+        <article id="pepe">
             <h2>Jugando con getElementById</h2>
             <p>
                 <button onclick="pj = leerTexto()">
@@ -62,9 +62,8 @@
             <p>
                 <button onclick="mostrarTodo('datos', pj, ald, clan, sp, v)">Mostrar todo</button>
             </p>
-
             <p>
-                <button onclick="mostrarLista('datos', pj, ald, clan, sp, v)">Mostrar Lista</button>
+                <button onclick="mostrarElemento('datos', pj, ald, clan, sp, v)">Mostrar lista</button>
             </p>
 
             <p id="pj1"></p>
@@ -97,13 +96,13 @@
             <p>
                 <script>
                     document.write(
-                        "La suma de " +
-                        x +
-                        " y " +
-                        y +
-                        " es igual a " +
-                        suma +
-                        "."
+                        "La suma de "
+                        + x
+                        + " y "
+                        + y
+                        + " es igual a "
+                        + suma
+                        + "."
                     );
                     // document.write("<br/>");
                     // document.write("La suma de x y y es igual a suma");
