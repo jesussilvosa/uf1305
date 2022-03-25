@@ -174,6 +174,29 @@ function mostrarLista(id, personaje, aldea, clan, poder, vidas) {
     ul.appendChild(item);
 
 
+    item = document.createElement ("li");
+
+    item.innerHTML= aldea;
+
+    lista.appendChild (item); 
+
+
+    item = document.createElement("li");
+
+    item.innerHTML = poder;
+
+    lista.appendChild(item);
+
+
+    item = document.createElement("li");
+
+    item.innerHTML =vidas;
+
+    lista.appendChild(item);
+
+
+
+
     //var lis = "<li>" + personaje + "</li>";
     // lis += "<li>" + aldea + "</li>";
     //lis += "<li>" + clan + "</li>";
